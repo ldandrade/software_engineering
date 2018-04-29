@@ -8,7 +8,16 @@ public class CalculatorTest {
 
 	@Test
 	public void testEvaluate() {
-		fail("Not yet implemented");
+		Calculator calc = new Calculator();
+		int sum = calc.evaluate("1+2+3+4");
+		assertEquals(10,sum);
+	}
+	
+	@Test
+	public void testPar() {
+		Calculator calc = new Calculator();
+		assertTrue(calc.par(10));
+		assertFalse(calc.par(9));		
 	}
 
 }

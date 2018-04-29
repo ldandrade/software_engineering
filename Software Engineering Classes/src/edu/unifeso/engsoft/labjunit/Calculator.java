@@ -8,4 +8,10 @@ public class Calculator {
 			sum +=Integer.valueOf(summand);
 		return sum;
 	}
+	
+	public boolean par(int num) {
+		if (num % 2 == 0)
+			return true;
+		return false;
+	}
 }
